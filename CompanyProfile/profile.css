@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon {
+    width: 200px;
+    float: left;    
+    height: 70px;
+}
+
+.logo {
+    color: rgb(208, 231, 208);
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(208, 231, 208);
+}
+
+.search {
+    width: 310px;
+    float: right;
+    margin-top: 13px;
+}
+
+.srch {
+    font-family: 'Times New Roman', serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(208, 231, 208); 
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(208, 231, 208);
+    border: 2px solid rgb(208, 231, 208);
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    float: left;
+}
+
+.btn:focus, .srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    color: white;
+    clear: both;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.cn {
+    width: 160px;
+    height: 40px;
+    background: rgb(208, 231, 208);
+    border: none;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+/* SECTION BARU (SKILLS & PROJECTS) */
+.section {
+    width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: rgb(208, 231, 208);
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 30%;
+    border: 1px solid rgba(208, 231, 208, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgb(208, 231, 208);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: rgb(208, 231, 208);
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 22px;
+}
+
+.project-card {
+    width: 45%;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #333;
+    margin-top: 100px;
+}
+
+.footer p {
+    color: #888;
+    font-size: 14px;
+    margin: 5px 0;
+}
